@@ -16,7 +16,6 @@ nav{
 
 ul {
     display: inline-flex;
-    /* justify-content: space-between; */
     list-style: none;
     gap: 24px;
 }
@@ -98,6 +97,13 @@ header{
     margin: 0 auto 40px auto;
     font-weight: 800;
 }
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f7f7f7;
+}
+
 
 .speakers{
     width:90%;
