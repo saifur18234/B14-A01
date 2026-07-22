@@ -14,6 +14,8 @@ section{
     padding: 0px 8%;
 }
 
+/* navigation */
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -63,6 +65,8 @@ nav a:hover{
     background:#1B3A8D;
 }
 
+/* banner section */
+
 header{
     background-image: linear-gradient(
             to right,
@@ -110,6 +114,7 @@ header{
     font-weight: 800;
 }
 
+/* Speaker section */
 
 .speakers{
     width:90%;
@@ -228,6 +233,11 @@ header{
     color: #0D1B2A;
 }
 
+.price-card hr{
+    border:none;
+    border-top:0.5px solid rgba(0, 0, 0, 0.108);
+}
+
 .price-card p{
     padding-bottom: 20px;
     font-size: 13px;
@@ -291,6 +301,11 @@ header{
     color: #FFFFFF;
 }
 
+.featured-card hr{
+    border:none;
+    border-top:0.5px solid rgba(255,255,255,.15);
+}
+
 .featured-card p{
     padding-bottom: 20px;
     font-size: 13px;
@@ -311,8 +326,8 @@ header{
 }
 
 ul li::marker {
-  color: #60A5FA; /* Change to your preferred color */
-  font-size: 14px; /* Optional: Makes the disc slightly larger */
+  color: #60A5FA; 
+  font-size: 14px; 
 }
 
 .featured-card button{
@@ -366,48 +381,58 @@ ul li::marker {
     color:#666;
 }
 
-/* Footer Section */
+
+
+
+/* footer section */
 
 footer{
-    background-color: #0D1B2A;
-    padding: 56px 60px 32px;
-    
+    background:#0D1B2A;
+    color:#fff;
+    padding:50px 8% 25px;
 }
 
-footer section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 20px;
-   
+.footer-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-footer p{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    color: #FFFFFF;
+.footer-logo img{
+    height:45px;
 }
+
 .social-links{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    display:flex;
+    gap:15px;
 }
-.social-link{
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+
+.social-links a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#1B263B;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    transition:.3s;
 }
-.social-link img{
-    width: 100%;
-    height: 100%;
-    /* object-fit: contain; */
+
+.social-links a:hover{
+    background:#2563EB;
+    transform:translateY(-3px);
+}
+
+footer hr{
+    margin:35px 0 20px;
+    border:none;
+    border-top:1px solid rgba(255,255,255,.15);
+}
+
+.copyright{
+    text-align:center;
+    color:#bfc7d5;
+    font-size:14px;
 }
